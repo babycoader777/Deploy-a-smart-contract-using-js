@@ -1,0 +1,39 @@
+geth --datadir singlenode init genesis.json
+
+
+geth --http --http.corsdomain http://remix.ethereum.org --allow-insecure-unlock --http --http.port 8545 --http.addr 127.0.0.1 --http.corsdomain "*" --http.api "eth,net,web3,personal,miner" --datadir node1 --nodiscover --networkid 4321 --port 30303 console --rpc.enabledeprecatedpersonal
+
+eth.accounts
+
+ eth.getBalance(eth.accounts[0])
+
+personal.unlockAccount(eth.accounts[0])
+
+miner.setEtherbase(eth.accounts[0])
+
+miner.start()
+
+miner.stop()
+
+*********************************************************
+npm install web3@1.3.6
+
+
+personal.newAccount()
+
+###############################xamp
+
+sudo /opt/lampp/manager-linux-x64.run
+
+
+#####################################
+
+geth --rinkeby console
+geth --goerli console
+ geth console
+ 
+ geth attach ipc://./pipe/geth.ipc
+
+##############################
+npm install solc
+
